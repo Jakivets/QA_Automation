@@ -3,6 +3,7 @@
 та у будь якому випадку не співпадіння поверне текст There are no type matches for operation */
 
 function typeChecker(arg1, arg2) {
+// ваш код
     if (typeof arg1 === 'string' && typeof arg2 === 'string') {
         return arg1 + arg2;
     } else if (typeof arg1 === 'number' && typeof arg2 === 'number') {
@@ -20,7 +21,8 @@ console.log(typeChecker(true, 5)); // виведе There are no type matches for
 /* 2. Написати функцію, яка, використовуючи тернарний оператор, виводить у консоль Yes, якщо число
 позитивне, та No якщо воно негативне */
 function isNegative(value) {
-    return value >= 0 ? console.log('No') : console.log('Yes');
+// ваш код
+        return value < 0 ? "Yes" : "No";
 }
 
 // Приклад роботи функції:
@@ -30,6 +32,7 @@ isNegative(1); // виведе у консоль "No"
 /* 3. Написати функцію, яка повертає true якщо перший аргумент ділиться на другий без остачі, 
 або якщо ні - повертає false */
 function divider(num1, num2) {
+// ваш код
     return num1 % num2 === 0;
 }
 
